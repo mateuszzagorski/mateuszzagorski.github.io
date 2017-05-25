@@ -273,7 +273,7 @@ body, html {
 .text_wrapper .date, .text_wrapper .city {
   font-size: 48px;
   font-weight: 900;
-  margin-top: -40px;
+  margin-top: 0px;
 }
 /*.text_wrapper .date {
   padding: 10px 0 0;
@@ -527,7 +527,7 @@ body, html {
   .info .header_text {
     font-size: 30px;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 50px;
   }
   .section_2 {
@@ -634,6 +634,10 @@ body, html {
   }
   .organizer .left_box p:nth-of-type(2) {
     padding: 0;
+  }
+  .info .header_text {
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 424px) {
