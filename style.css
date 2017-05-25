@@ -1,4 +1,4 @@
-* http://meyerweb.com/eric/tools/css/reset/
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -48,8 +48,9 @@ table {
 }
 /*------------------GENERAL------------------*/
 /*-------------------------------------------*/
+
 body {
-      min-width: 1920px;
+      /*min-width: 1920px;*/
       background-color: #401161;
 }
 body, html {
@@ -157,7 +158,7 @@ body, html {
   text-align: center;
   color: #000;
 }
-.caption span.signup {
+.caption .signup {
 	font-weight: bold;
 	color: #fff;
 	padding: 18px;
@@ -167,7 +168,7 @@ body, html {
 	left: 230px;
 	z-index: 3;
 }
-.caption span.signup:hover {
+.caption .signup:hover {
 	border: 3px solid #47c9a8;
 	cursor: pointer;
 }
@@ -406,6 +407,9 @@ body, html {
 .contact .bigger_text {
   font-size: 20px;
 }
+.organizer .right_box img {
+  width: 100%;
+}
 
 /*MOBILE MENU*/
 .mobileMenu {
@@ -467,10 +471,10 @@ body, html {
   color: #FFF;
 }
 
-/*RESPONSIVE TELEFONY*/
-@media screen and (max-width: 800px) {
+/*VARIOUS FOR LOWER SCREEN SIZES */
+@media screen and (max-width: 1023px) {
   .mobile {
-    display: block;
+    display: inline-table;
     background-color: #401161;
     max-height: 80px;
     border-bottom: 1px solid #FFF;
@@ -491,7 +495,7 @@ body, html {
     margin-top: 100px;
     min-height: 950px;
   }
-  .city, .date {
+  #start .city, #start .date {
     position: initial;
     text-align: center;
   }
@@ -510,7 +514,7 @@ body, html {
     text-align: center;
     position: initial;
   }
-  .caption span.signup {
+  .caption .signup {
     text-align: center;
     position: initial;
   }
@@ -521,7 +525,7 @@ body, html {
     background: none;
   }
   .info .header_text {
-    font-size: 45px;
+    font-size: 30px;
     text-align: center;
     margin-top: 150px;
     margin-bottom: 50px;
@@ -542,7 +546,7 @@ body, html {
   }
   .section_3 {
     height: auto;
-    padding: 200px 0 0 0;
+    padding: 400px 0 0 0;
   }
   .section_3 .wrapper, .section_4 .wrapper {
     display: initial;
@@ -571,7 +575,7 @@ body, html {
     text-align: center;
   }
   .left_box p:last-child {
-    padding: 30px 50px 0;
+    padding: 30px 30px 0;
     text-align: justify;
   }
   .section_4 {
@@ -579,7 +583,7 @@ body, html {
   }
   .section_4 .right_box {
     display: block;
-    padding: 40px 50px 0;
+    padding: 40px 50px;
     width: auto;
   }
   .contact .text_break {
@@ -601,21 +605,206 @@ body, html {
   .flex_icons {
       width: auto;
   }
-  right_box a:hover {
+  .right_box a:hover {
     color: #44CCA4;
   }
-
   #about.wrapper {
-    margin: 0 0 200px;
+    margin: 50px 0 200px;
   }
   .info .about_us {
     padding: 0;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .event_list {
+    text-align: center;
+    margin: 0 35px 0 0;
+  }
+  .arrow {
+    padding: 40px 0 10px 0;
+  }
+  .info p.text {
+    padding: 50px 0 0;
+  }
+  .section_3 {
+    padding: 550px 0 0 0;
+  }
+  .flex_icons:first-child {
+    padding: 0 20px 20px 0;
+  }
+  .organizer .left_box p:nth-of-type(2) {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  .section_3 {
+    padding: 250px 0 0 0;
+  }
+  .organizer .left_box p:nth-of-type(2) {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .info .header_text {
+    margin-top: 180px;
+    margin-bottom: 70px;
+  }
+  .section_3 {
+    padding: 200px 0 0 0;
+  }
+  .organizer .left_box p:nth-of-type(2) {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .info .header_text {
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
+  #about.wrapper {
+    margin: 50px 0;
+  }
+  .section_3 {
+    padding: 75px 0 0 0;
+  }
+  .organizer .left_box p:nth-of-type(2) {
+    margin: 5px 0;
+    padding: 0;
+  }
+  .section_4 .right_box {
+    display: flex;
+  }
+  .flex_icons:first-child {
+    padding: 20px;
+  }
+  .caption .signup {
+    width: 50%;
+    margin: 0 auto;
+  }
 
-
-
-
-
-
-/*cos*/
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .city, .date, .event_list {
+    left: 30px;
+  }
+  .event_list {
+    left: 0;
+  }
+  .caption .signup {
+    left: 30px;
+  }
+  .arrow {
+    left: 185px;
+  }
+  #organizer .right_box img {
+    width: 100%;
+  }
+  .text_wrapper .date, .text_wrapper .city {
+    font-size: 30px;
+  }
+  .info .header_text {
+    font-size: 20px;
+  }
+  .left_box p.header_text {
+    margin: 0;
+    font-size: 36px;
+  }
+  .info p.text {
+    font-size: 14px;
+  }
+  .text_wrapper .info {
+    margin-top: 80px;
+  }
+  .info .about_us {
+    padding: 0;
+  }
+  .date_wrapper {
+    margin-left: -130px;
+  }
+  .left_box p.text {
+    font-size: 22px;
+  }
+  .left_box p {
+    font-size: 14px;
+  }
+  .organizer .left_box {
+    width: 40%;
+  }
+  .contact .left_box {
+    width: 54%;
+    margin-left: -50px;
+  }
+  .section_3 .right_box {
+    max-width: 26%;
+  }
+  .contact .left_box p {
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  .contact .right_box {
+    padding: 0 0 20px 0;
+    margin: 0 0 0 -80px;
+  }
+  .flex_icons img {
+    max-width: 30%;
+  }
+  .social_text {
+    font-size: 18px;
+  }
+  .section_4 .wrapper {
+    padding: 0;
+    margin: 35px 0;
+  }
+  .section_3 .wrapper {
+    margin: 0 0 0 -150px;
+  }
+  .organizer .left_box p:nth-of-type(2) {
+    padding: 0;
+  }
+  .left_box p.header_text {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  .city, .date, .event_list {
+    left: 30px;
+  }
+  .event_list {
+    left: 30px;
+  }
+  .caption .signup {
+    left: 30px;
+  }
+  .arrow {
+    left: 185px;
+  }
+  #about .date, #about .city {
+    position: absolute;
+  }
+  #about .date {
+    top: 130px;
+  }
+  #about .city {
+    top: 70px;
+  }
+  .section_3 .wrapper, .section_4 .wrapper {
+    padding-top: 0;
+  }
+  .section_3 .wrapper {
+    margin: 0 0 0 -150px;
+  }
+  .section_4 .wrapper {
+    margin: 0 0 0 -180px;
+    padding: 40px 0;
+  }
+  .contact .right_box {
+    width: 20%;
+    padding: 0 0 30px 0;
+  }
+  .contact .left_box {
+    width: 50%;
+  }
+  .info .about_us {
+    padding: 0;
+  }
+}
