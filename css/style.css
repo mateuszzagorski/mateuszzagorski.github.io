@@ -5,6 +5,13 @@
   margin: 0;
   padding: 0;
 }
+.farfocle {
+  position: fixed;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  /*width: 100%;*/
+}
 video {
     position: absolute;
     top: 50%;
@@ -15,7 +22,7 @@ video {
     width: auto;
     z-index: 1;
     transform: translateX(-50%) translateY(-50%);
- background: url(../images/bg-top.jpg) bottom center no-repeat #401161;
+ background: url(../images/bg-top.jpg) bottom center no-repeat #411161;
   background-size: cover;
   transition: 1s opacity;
 }
@@ -27,7 +34,7 @@ video {
 }
 /*.a1-img { background: url(../images/bg-top.jpg) bottom center no-repeat #000 }*/
 .a2-img {
-  background: url(../images/photo1.png) bottom center no-repeat #401161;
+  background: url(../images/photo1.png) bottom center no-repeat #411161;
 }
 li {
   list-style-type: none;
@@ -35,7 +42,7 @@ li {
 
 body,html{
   height: 100%;
-  background-color: #401161;
+  background-color: #411161;
 }
 .bgimg-1 {
   background-image: url(../images/bg-top.jpg);
@@ -45,13 +52,13 @@ body,html{
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
-  background-color: #401161;
+  background-color: #411161;
   display: none;
 }
 /*-------------------MENU--------------------*/
 /*-------------------------------------------*/
   .desktop {
-  	background-color: #401161;
+  	background-color: #411161;
   }
   .desktop {
     position: fixed;
@@ -159,8 +166,8 @@ body,html{
 }
 .mobile a {
   display: block;
-  color: #401161;
-  border-bottom: 1px solid #401161;
+  color: #411161;
+  border-bottom: 1px solid #411161;
   text-decoration: none;
   text-align: center;
   padding: 10px 0;
@@ -173,17 +180,6 @@ body,html{
   color: #FFF;
 }
 
-
-/*-----------------CONFETTI------------------*/
-/*-------------------------------------------*/
-.confetti {
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 1;
-}
 /*------------------ARROWS-------------------*/
 /*-------------------------------------------*/
 .bounce {
@@ -293,7 +289,7 @@ body,html{
 /*-------------------------------------------*/
 .text {
   font-size: 14px;
-  text-align: justify;
+  text-align: left;
 }
 .big_size_text, .mid_size_text, .small_size_text {
   font-weight: 900;
@@ -309,11 +305,11 @@ body,html{
   font-size: 24px;
 }
 .about_us {
-  text-align: justify;
+  text-align: left;
 }
 .text_container {
   margin-top: 30px;
-  background-color: #401161;
+  background-color: #411161;
   padding: 35px 30px
 }
 
@@ -340,10 +336,10 @@ body,html{
 /*-------------------------------------------*/
 .contact {
   background-color: #FFF;
-  color: #401161;
+  color: #411161;
 }
 .contact .text {
-  color: #401161;
+  color: #411161;
 }
 .contact_container {
   margin: 60px 0 0;
@@ -352,7 +348,7 @@ body,html{
   margin: 30px 0 0;
 }
 .contact .fb_box {
-  color: #401161;
+  color: #411161;
   padding: 0 0 60px 0;
   margin-top: 550px;
 }
@@ -368,19 +364,19 @@ body,html{
 }
 .flex_icons a {
   text-decoration: none;
-  color: #401161;
+  color: #411161;
 }
 .flex_icons:first-of-type {
   padding: 0 0 30px 0;
+}
+.flex_icons img {
+  max-width: 40px;
 }
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
   .start, .about, .organizer, .contact, .container-fluid {
     height: auto;
-  }
-  .confetti {
-    display: none;
   }
   .date {
     margin: 0;
@@ -393,6 +389,7 @@ body,html{
   }
   .big_size_text, .mid_size_text, .small_size_text {
     text-align: center;
+    /*text-align: left;*/
   }
   .big_size_text {
     font-size: 30px;
@@ -405,6 +402,7 @@ body,html{
   }
   .event_list li {
     text-align: center;
+    /*text-align: left;*/
   }
   .bgimg-1 {
     top: 270px;
@@ -428,7 +426,7 @@ body,html{
     background-size: 100%;
     background-position: top;
     background-image: url(../images/photo1.png);
-    background-color: #401161;
+    background-color: #411161;
     background-repeat: no-repeat;
   }
   .text_container {
@@ -454,7 +452,8 @@ body,html{
     margin-top: 30px;
   }
   .contact_container .text {
-    text-align: center;
+    /*text-align: center;*/
+    text-align: left;
   }
 }
 
@@ -463,14 +462,13 @@ body,html{
   .start, .about, .organizer, .contact, .container-fluid {
     height: auto;
   }
-  .confetti {
-    display: none;
-  }
   .big_size_text, .mid_size_text, .small_size_text {
     text-align: center;
+    /*text-align: left;*/
   }
   .event_list li {
     text-align: center;
+    /*text-align: left;*/
   }
   .date:first-of-type {
     margin-top: 90px;
@@ -493,7 +491,7 @@ body,html{
     background-size: 100%;
     background-position: top;
     background-image: url(../images/photo1.png);
-    background-color: #401161;
+    background-color: #411161;
     background-repeat: no-repeat;
   }
   .about .date:first-of-type {
@@ -506,7 +504,8 @@ body,html{
     margin: 15px 0;
   }
   .contact_container .text {
-    text-align: center;
+    /*text-align: center;*/
+    text-align: left;
   }
   .flex_icons img {
     width: 10%;
@@ -529,9 +528,6 @@ body,html{
   .start, .about, .organizer, .contact, .container-fluid {
     height: auto;
   }
-  .confetti {
-    height: 1200px;
-  }
   .bgimg-1 {
     top: 200px;
     height: 800px;
@@ -545,9 +541,11 @@ body,html{
   }
   .big_size_text, .mid_size_text, .small_size_text {
     text-align: center;
+    /*text-align: left;*/
   }
   .event_list li {
     text-align: center;
+    /*text-align: left;*/
   }
   .caption {
     margin: 780px 0 40px 0;
@@ -556,7 +554,7 @@ body,html{
     background-size: 100%;
     background-position: top;
     background-image: url(../images/photo1.png);
-    background-color: #401161;
+    background-color: #411161;
     background-repeat: no-repeat;
   }
   .about .date:first-of-type {
@@ -569,7 +567,8 @@ body,html{
     line-height: 0.8;
   }
   .contact_container .text {
-    text-align: center;
+    /*text-align: center;*/
+    text-align: left;
   }
   .flex_icons img {
     width: 15%;
@@ -638,7 +637,7 @@ body,html{
 @media (max-width: 991px) {
   .mobile {
     display: inline-table;
-    background-color: #401161;
+    background-color: #411161;
     border-bottom: 1px solid #FFF;
     text-align: left;
   }
