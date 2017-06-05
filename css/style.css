@@ -10,7 +10,7 @@
   left: 0;
   z-index: 0;
   height: 100%;
-  /*width: 100%;*/
+  width: 100%;
 }
 video {
     position: absolute;
@@ -22,7 +22,7 @@ video {
     width: auto;
     z-index: 0;
     transform: translateX(-50%) translateY(-50%);
- background: url(../images/bg-top.jpg) bottom center no-repeat #411161;
+ background: url(../images/bg-top.jpg) bottom center no-repeat #431161;
   background-size: cover;
   transition: 1s opacity;
 }
@@ -34,7 +34,7 @@ video {
 }
 /*.a1-img { background: url(../images/bg-top.jpg) bottom center no-repeat #000 }*/
 .a2-img {
-  background: url(../images/photo1.png) bottom center no-repeat #411161;
+  background: url(../images/photo1.png) bottom center no-repeat #431161;
 }
 li {
   list-style-type: none;
@@ -52,13 +52,13 @@ body,html{
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
-  background-color: #411161;
+  background-color: #431161;
   display: none;
 }
 /*-------------------MENU--------------------*/
 /*-------------------------------------------*/
   .desktop {
-  	background-color: #411161;
+  	background-color: #431161;
   }
   .desktop {
     position: fixed;
@@ -166,8 +166,8 @@ body,html{
 }
 .mobile a {
   display: block;
-  color: #411161;
-  border-bottom: 1px solid #411161;
+  color: #431161;
+  border-bottom: 1px solid #431161;
   text-decoration: none;
   text-align: center;
   padding: 10px 0;
@@ -256,10 +256,10 @@ body,html{
 	border: 3px solid #47c9a8;
 	cursor: pointer;
 }
-.caption img {
+/* .caption img {
   width: 40px;
   height: 40px;
-}
+} */
 /*-------------------DATE--------------------*/
 /*-------------------------------------------*/
 .date, .event_list {
@@ -309,7 +309,7 @@ body,html{
 }
 .text_container {
   margin-top: 30px;
-  background-color: #411161;
+  background-color: #431161;
   padding: 35px 30px
 }
 
@@ -336,10 +336,10 @@ body,html{
 /*-------------------------------------------*/
 .contact {
   background-color: #FFF;
-  color: #411161;
+  color: #431161;
 }
 .contact .text {
-  color: #411161;
+  color: #431161;
 }
 .contact_container {
   margin: 60px 0 0;
@@ -348,7 +348,7 @@ body,html{
   margin: 30px 0 0;
 }
 .contact .fb_box {
-  color: #411161;
+  color: #431161;
   padding: 0 0 60px 0;
   margin-top: 550px;
 }
@@ -364,7 +364,7 @@ body,html{
 }
 .flex_icons a {
   text-decoration: none;
-  color: #411161;
+  color: #431161;
 }
 .flex_icons:first-of-type {
   padding: 0 0 30px 0;
@@ -375,6 +375,9 @@ body,html{
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
+  .farfocle {
+    width: auto;
+  }
   .start, .about, .organizer, .contact, .container-fluid {
     height: auto;
   }
@@ -426,7 +429,7 @@ body,html{
     background-size: 100%;
     background-position: top;
     background-image: url(../images/photo1.png);
-    background-color: #411161;
+    background-color: #431161;
     background-repeat: no-repeat;
   }
   .text_container {
@@ -459,6 +462,9 @@ body,html{
 
  /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
+  .farfocle {
+    width: auto;
+  }
   .start, .about, .organizer, .contact, .container-fluid {
     height: auto;
   }
@@ -491,7 +497,7 @@ body,html{
     background-size: 100%;
     background-position: top;
     background-image: url(../images/photo1.png);
-    background-color: #411161;
+    background-color: #431161;
     background-repeat: no-repeat;
   }
   .about .date:first-of-type {
@@ -525,6 +531,9 @@ body,html{
 
  /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
+  .farfocle {
+    width: auto;
+  }
   .start, .about, .organizer, .contact, .container-fluid {
     height: auto;
   }
@@ -554,7 +563,7 @@ body,html{
     background-size: 100%;
     background-position: top;
     background-image: url(../images/photo1.png);
-    background-color: #411161;
+    background-color: #431161;
     background-repeat: no-repeat;
   }
   .about .date:first-of-type {
@@ -637,7 +646,7 @@ body,html{
 @media (max-width: 991px) {
   .mobile {
     display: inline-table;
-    background-color: #411161;
+    background-color: #431161;
     border-bottom: 1px solid #FFF;
     text-align: left;
   }
