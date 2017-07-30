@@ -1,8 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 
 <head>
+	<title>Samba Port Festival</title>
 	<meta charset="UTF-8">
+
+	<meta property="og:url" content="http://sambaportfestival.pl/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Samba Port Festival." />
+	<meta property="og:description" content="Samba Port Festival. Obok koncertów scenicznych Bloco Pomerania propaguje występy w formie muzyczno- tanecznej parady, w którą wciągana jest publiczność, podobnie jak dzieje się to w Brazylii." />
+	<meta property="og:image" content="http://sambaport.pl/images/bg-top.jpg" />
+	<meta property="og:image:secure_url" content="http://www.sambaport.pl/images/bg-top.jpg" />
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Czcionka googlefont Poppins -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -13,6 +22,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="css/style.css" />
+	<!-- favicon -->
+	<link rel='shortcut icon' type='image/png' href='images/favicon.png' />
 </head>
 
 
@@ -42,7 +53,7 @@
 				  		<div class="arrow animated bounce">
 								<img src="images/arrows.png" alt="bouncing_arrows" />
 							</div>
-				    	<div class="signup mid_size_text">Zapisz się na festiwal!</div>
+				    	<div class="signup mid_size_text">POBIERZ PROGRAM</div>
 				  	</div>
 					</div>
 				</div>
@@ -51,11 +62,11 @@
 					<nav class="desktop">
 						<ul id="desktop_menu" class="menu">
 							<li><a class="logo" href="#start"></a></li>
-							<li><a href="#start">Zapisy</a></li>
+							<li><a href="#start">Program festiwalu</a></li>
 							<li><a href="#about">O festiwalu</a></li>
 							<li><a href="#organizer">Organizator</a></li>
 							<li><a href="#contact">Kontakt</a></li>
-							<li><a href="#partners">Partnerzy</a></li>
+							<li><a href="http://samba-port-festiwal.pl/images/mapa_lokalizacje.jpg" download>Mapa wydarzenia</a></li>
 						</ul>
 					</nav>
 
@@ -67,11 +78,11 @@
 						 <div class="bar3"></div>
 					 </button>
 						<div class="mobileMenu">
-							<a href="#start">Zapisy</a>
+							<a href="#start">Program festiwalu</a>
 							<a href="#about">O festiwalu</a>
 							<a href="#organizer">Organizator</a>
 							<a href="#contact">Kontakt</a>
-							<a href="#partners">Partnerzy</a>
+							<a target="_blank" href="http://samba-port-festiwal.pl/images/mapa_lokalizacje.jpg" download>Mapa wydarzenia</a>
 						</div>
 					</nav>
 				</div>
@@ -142,8 +153,8 @@
 						<p class="text">Zakwaterowanie i wyżywienie uczestników festiwalu możliwe jest w dniach od 3 do 7 sierpnia.</p>
 						<p class="small_size_text text_separator_top text">Masz pytania?</p>
 						<p class="small_size_text text">Skontaktuj się z nami!</p>
-						<p class="text_separator_top text">info@sambaportfestival.pl</p>
-						<p class="text">+48 500 600 200</p>
+						<p class="text_separator_top text">sambaportfestival@gmail.com</p>
+						<p class="text"> </p>
 						<p class="text_separator_top small_size_text text">Chcesz być na bieżąco?</p>
 						<p class="small_size_text text">Polub nas na facebooku!</p>
 					</div>
@@ -166,24 +177,18 @@
 		</div>
 	</div>
 
-	<div class="a5">
-		<div class="container-fluid">
-			<div class="row">
-			</div>
-		</div>
-	</div>
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<!-- JQUERY -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<script>
 		var signup = document.querySelector('.signup');
 		signup.addEventListener('click', function() {
 			//window.open('https://docs.google.com/forms/d/1_ZBHI-W0BDiQ2WvliRn_y6KIDcEjvTFDkROJLESLzCU/viewform?ts=5910daa6&edit_requested=true');
-			window.open('https://goo.gl/PMPyZ4');
+			window.open('http://samba-port-festiwal.pl/images/harmonogram%20festiwalu.png');
 		}, false);
 
 		//RESPONSIVE MENU
